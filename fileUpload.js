@@ -38,6 +38,8 @@ function processFiles(files) {
 
 		    readXML(doc, true);
 
+		    document.getElementById("upl").innerHTML = "Archivo Procesado";
+
 		};
 
 	reader.readAsText(file);
