@@ -1,3 +1,4 @@
+
 function getXML(xmlpath){
 	// Create a connection to the file.
 	var Connect = new XMLHttpRequest();
