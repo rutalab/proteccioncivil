@@ -16,9 +16,9 @@ function getXML(xmlpath){
 };
 
 
-function readXML(xmlpath){
+function readXML(xmlpath, isDocument){
 	
-	TheDocument = getXML(xmlpath);
+	TheDocument = isDocument ? xmlpath : getXML(xmlpath);
 
 	var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 	// Place the root node in an element.
@@ -102,9 +102,9 @@ function printJSON(jsobject){
 
 }
 
-readXML("ciclon.xml");
-var xmljson = xmlToJson(getXML("ciclon.xml"));
-printJSON(xmljson);
+//readXML("ciclon.xml");
+//var xmljson = xmlToJson(getXML("ciclon.xml"));
+//printJSON(xmljson);
 
 
 

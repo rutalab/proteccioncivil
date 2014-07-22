@@ -22,8 +22,20 @@ function handleFileSelect(evt) {
 	}
 	document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
 
-	console.log(files[0]);
-	readXML(files[0]);
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+
+    var parser = new DOMParser();
+
+    var doc = parser.parseFromString(reader.result, "text/xml");
+
+    readXML(doc, true);
+
+  };
+
+	reader.readAsText(files[0]);
+	// readXML(files[0]);
 
 
 };
