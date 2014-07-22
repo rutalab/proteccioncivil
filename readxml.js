@@ -33,27 +33,27 @@ function readXML(xmlpath, isDocument){
 
 	// Write the data to the page.
 	if(node == "info"){
-			document.writeln(nodeTP);
-		document.write("<br>");
+		//document.writeln(nodeTP);
+		//document.write("<br>");
 			for (var j = 0; j < testi.children[i].children.length; j++){
 				var nodeInt = testi.children[i].children[j].nodeName.toString();
 				var nodeIntTP = "<strong>"+nodeInt+"</strong>";
 				var identInt =  testi.children[i].children[j].textContent.toString();
 
-				document.writeln(tab+nodeIntTP);
-			document.write("<br>");
-			document.writeln(tab+tab+identInt);
-			document.write("<br>");
+				//document.writeln(tab+nodeIntTP);
+			//document.write("<br>");
+			//document.writeln(tab+tab+identInt);
+			//document.write("<br>");
 			}
 	}
 	else{
-	   	document.writeln(nodeTP);
-		document.write("<br>");
-		document.writeln(tab+ident);
-		document.write("<br>");
+	   	//document.writeln(nodeTP);
+		//document.write("<br>");
+		//document.writeln(tab+ident);
+		//document.write("<br>");
 	}
 
-	document.writeln();
+	//document.writeln();
 	}
 };
 
@@ -98,13 +98,10 @@ function xmlToJson(xml) {
 function printJSON(jsobject){
 	var jsonString = JSON.stringify(jsobject)
 	var jsonPretty = JSON.stringify(JSON.parse(jsonString),null,2); 
-	document.writeln(jsonPretty);
+	//document.writeln(jsonPretty);
 
 }
 
 //readXML("ciclon.xml");
 //var xmljson = xmlToJson(getXML("ciclon.xml"));
 //printJSON(xmljson);
-
-
-

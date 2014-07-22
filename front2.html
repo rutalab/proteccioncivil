@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-		<title>Title Page</title>
+		<title>RASP</title>
 		<meta charset="UTF-8">
 		
 		
@@ -11,11 +11,16 @@
 	<body>
 		<h1 class="text-center">RASP</h1>
 
-		<div id="drop_zone">Suelta el archivo aquí
-			<br>
-			<input type="file" id="files" name="files[]" multiple />
+		<div id="drop_zone">
+				
+					<div class="upload">
+						<span>Subir Archivo</span>
+						<input id="fileInput" class="upload" type="file" size="50" onchange="processFiles(this.files)">
+					</div>
+				
+				<!--<output id="list"></output>-->
 		</div>
-		<output id="list"></output>
+		
 
 		<br>
 
