@@ -1,0 +1,50 @@
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>133b636a-347c-40d5-a8b3-95495a6f4697</identifier>
+  <sender>smn.cna.gob.mx</sender>
+  <sent>2014-07-21T16:15:00-05:00</sent>
+  <status>Actual</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <code>01</code>
+  <info>
+    <language>es-419</language>
+    <category>Met</category>
+    <event>Aviso de Ciclón Tropical en el Atlántico</event>
+    <responseType>Execute</responseType>
+    <urgency>Immediate</urgency>
+    <severity>Unknown</severity>
+    <certainty>Observed</certainty>
+    <effective>2014-07-21T16:15:00-05:00</effective>
+    <expires>2014-07-21T22:15:00-05:00</expires>
+    <senderName>Comisión Nacional del Agua - Servicio Meteorológico Nacional</senderName>
+    <headline>SE FORMA LA DEPRESIÓN TROPICAL DOS EN EL ATLÁNTICO.</headline>
+    <description>Se forma la Depresión Tropical DOS en el Océano Atlántico, con desplazamiento hacia el Oeste, muy lejos de las costas nacionales.     Debido a su lejanía no representa riesgo para México.</description>
+    <instruction>a la población en general en los estados mencionados y a la navegación marítima en las inmediaciones del sistema, mantener precauciones y atender recomendaciones emitidas por las autoridades del sistema nacional de protección civil</instruction>
+    <web>http://smn.cna.gob.mx/</web>
+    <contact>webmaster@conagua.gob.mx</contact>
+    <parameter>
+      <valueName>Elaboró</valueName>
+      <value>Alex Ramírez</value>
+    </parameter>
+    <parameter>
+      <valueName>Revisó</valueName>
+      <value>Angélica Baca</value>
+    </parameter>
+    <parameter>
+      <valueName>categoría</valueName>
+      <value>Tormenta Tropical</value>
+    </parameter>
+    <parameter>
+      <valueName>distancia</valueName>
+      <value>morethan500km</value>
+    </parameter>
+    <parameter>
+      <valueName>layer:Google:Region:0.1</valueName>
+      <value>Q Roo</value>
+    </parameter>
+    <area>
+      <areaDesc>4700 km al este de Cancún, Q. Roo</areaDesc>
+      <polygon>21.51440672003028,-87.110595703125 20.981956742832327,-86.868896484375 21.186972714123776,-86.737060546875 21.53484700204879,-86.802978515625 21.51440672003028,-87.110595703125</polygon>
+    </area>
+  </info>
+</alert>
