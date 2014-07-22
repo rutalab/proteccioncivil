@@ -34,9 +34,6 @@ function handleFileSelect(evt) {
 
   };
 
-	reader.readAsText(files[0]);
-	// readXML(files[0]);
-
 
 };
 
