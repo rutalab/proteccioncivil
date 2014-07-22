@@ -1,0 +1,21 @@
+p{
+	font-family: sans-serif;
+	color: 	#4B4B4B;
+}
+
+body{
+	background-color:#CDCDCD;
+}
+
+.mainBox{
+	background-color: #FFFFFF;
+	width: 220px;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 0px; 
+
+}
+
+.text-center{
+	text-align: center;
+}
