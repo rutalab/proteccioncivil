@@ -19,6 +19,7 @@ function getXML(xmlpath){
 function readXML(xmlpath, isDocument){
 	
 	TheDocument = isDocument ? xmlpath : getXML(xmlpath);
+	var processedText = "";
 
 	var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 	// Place the root node in an element.
@@ -34,27 +35,34 @@ function readXML(xmlpath, isDocument){
 	// Write the data to the page.
 	if(node == "info"){
 		//document.writeln(nodeTP);
+		processedText+=nodeTP+"<br>";
 		//document.write("<br>");
 			for (var j = 0; j < testi.children[i].children.length; j++){
 				var nodeInt = testi.children[i].children[j].nodeName.toString();
 				var nodeIntTP = "<strong>"+nodeInt+"</strong>";
 				var identInt =  testi.children[i].children[j].textContent.toString();
 
-				//document.writeln(tab+nodeIntTP);
+			//document.writeln(tab+nodeIntTP);
+			processedText+=tab+nodeIntTP+"<br>";
 			//document.write("<br>");
 			//document.writeln(tab+tab+identInt);
+			processedText+=tab+tab+identInt+"<br>";
 			//document.write("<br>");
 			}
 	}
 	else{
 	   	//document.writeln(nodeTP);
+	   	processedText+=nodeTP+"<br>";
 		//document.write("<br>");
+
 		//document.writeln(tab+ident);
+		processedText+=tab+ident+"<br>";
 		//document.write("<br>");
 	}
 
 	//document.writeln();
 	}
+	document.getElementById('doc').innerHTML = processedText;
 };
 
 
