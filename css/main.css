@@ -1,21 +1,58 @@
-p{
-	font-family: sans-serif;
-	color: 	#4B4B4B;
+body {
+    background-color: #EDEDED;
 }
 
-body{
-	background-color:#CDCDCD;
+h1 {
+	font-family: "arial"; 
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
-.mainBox{
+h2 {
+	font-family: "arial";
+	font-size: 24px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+h3 {
+	font-family: "arial";
+	font-size: 20px;
+	color: #B3B3B3;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.xml_container {
+	font-family: "arial";
 	background-color: #FFFFFF;
-	width: 220px;
-    padding: 10px;
-    border: 1px solid gray;
-    margin: 0px; 
+	width: 60%;
+	height: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: absolute;
+}
 
+.effect1 {
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
 }
 
 .text-center{
 	text-align: center;
+}
+
+#drop_zone{
+	
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	width: 30%;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #629BF0;
+	font-family: "arial";
 }

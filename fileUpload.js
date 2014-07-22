@@ -31,7 +31,13 @@ function handleFileSelect(evt) {
     var doc = parser.parseFromString(reader.result, "text/xml");
 
     readXML(doc, true);
+
   };
+
+	reader.readAsText(files[0]);
+	// readXML(files[0]);
+
+
 };
 
 function handleDragOver(evt) {
