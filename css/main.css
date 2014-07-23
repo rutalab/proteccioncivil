@@ -57,6 +57,12 @@ h3 {
 	font-family: "arial";
 }
 
+#event{
+	font-family: "arial";
+	text-align: center;
+	font-size: 18px;
+}
+
 .upload {
 	position: relative;
 	overflow: hidden;
