@@ -63,6 +63,12 @@ h3 {
 	font-size: 18px;
 }
 
+#headline{
+	font-family: "arial";
+	text-align: center;
+	font-size: 18px;	
+}
+
 .upload {
 	position: relative;
 	overflow: hidden;

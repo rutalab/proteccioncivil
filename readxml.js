@@ -21,6 +21,7 @@ function readXML(xmlpath, isDocument){
 	TheDocument = isDocument ? xmlpath : getXML(xmlpath);
 	var processedText = "";
 
+
 	var tab = "&nbsp;&nbsp;&nbsp;&nbsp;";
 	// Place the root node in an element.
 	var testi = TheDocument.childNodes[0];
@@ -42,6 +43,14 @@ function readXML(xmlpath, isDocument){
 				var nodeIntTP = "<strong>"+nodeInt+"</strong>";
 				var identInt =  testi.children[i].children[j].textContent.toString();
 
+				
+				if (nodeInt == "event"){
+					document.getElementById('event').innerHTML = identInt;
+				}
+				else if(nodeInt == "headline"){
+					document.getElementById('headline').innerHTML = identInt;
+				}
+
 			//document.writeln(tab+nodeIntTP);
 			processedText+=tab+nodeIntTP+"<br>";
 			//document.write("<br>");
@@ -62,7 +71,7 @@ function readXML(xmlpath, isDocument){
 
 	//document.writeln();
 	}
-	document.getElementById('doc').innerHTML = processedText;
+	//document.getElementById('doc').innerHTML = processedText;
 };
 
 
